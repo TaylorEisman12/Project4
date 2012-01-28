@@ -1,9 +1,6 @@
 alert("JavaScript works!");
 
 String
-    Does a string follow a 123-456-7890 pattern like a phone number?
-    Does a string follow an aaa@bbb.ccc pattern like an email address?
-    Is the string a URL? (Does it start with http: or https:?)
     Title-case a string (split into words, then uppercase the first letter of each word)
     Given a string that is a list of things separated by a given string, as well as another string separator,
     return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
@@ -22,6 +19,7 @@ var phoneNumber = 123-456-7890;
 var emailAddress = aaa@bbb.ccc
 var stringSentance = "There is no spoon";
 var stringSeperator = "abc";
+var url = "https://github.com";
 
 var num1 = 2.1;
 var numPercent = 45;
@@ -43,31 +41,25 @@ var validateEmail = function(emailAddress){
    return emailPattern.test(emailAddress);  
 };
 
-var url = function(){
-    
+var checkURL = function(url) {
+        if(url.substring(0,5) = "https"){
+            return true;
+        }
+             if(url.substring(0,4) = "http"){
+            return true;
+        }
+            return false;
 };
 
-var titleCase = function(){
-
+var titleCase = function(stringSentence){
+        var splitString = stringSentence.split(" ");
+            for(var i=0; i<splitString.length; i++) {
+                
 };
 
-var stringReturn = function(){
-
-};
 
 var formatNumber = function(num1){
         num.toFixed(2);
         console.log(num1);
 };
 
-var fuzzyMatch = function(){
-
-};
-
-var hourSpand = function(){
-
-};
-
-var stringToNum = function(){
-
-};
