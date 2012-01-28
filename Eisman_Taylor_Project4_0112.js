@@ -1,7 +1,6 @@
 alert("JavaScript works!");
-
+/*
 String
-    Title-case a string (split into words, then uppercase the first letter of each word)
     Given a string that is a list of things separated by a given string, as well as another string separator,
     return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
 Number
@@ -14,6 +13,7 @@ Array
     Find the total value of just the numbers in an array, even if some of the items are not numbers.
     Given an array of objects and the name of a key, return the array sorted by the value of that key in
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
+*/ 
 
 var phoneNumber = 123-456-7890;
 var emailAddress = aaa@bbb.ccc
@@ -54,13 +54,14 @@ var checkURL = function(url) {
 var titleCase = function(stringSentence){
         var splitString = stringSentence.split(" ");
             for(var i=0; i<splitString.length; i++) {
-                splitString[i] = splitString[i][0].toUpperCase
-            }    
+                splitString[i] = splitString[i][0].toUpperCase + splitString[i].substr(1);
+            } 
+                return splitString.join(" ");           
 };
 
 
 var formatNumber = function(num1){
-        num.toFixed(2);
+        num1.toFixed(2);
         console.log(num1);
 };
 
