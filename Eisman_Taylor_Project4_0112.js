@@ -20,13 +20,14 @@ Array
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
 
 var phoneNumber = function(){
-        if(x == xxx-xxx-xxxx)
+        if(^(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$")
             console.log("Text");
                 }else{
                         console.log("Different Text");
 };
 
 var emailAddress = function(){
+        
         
 };
 
