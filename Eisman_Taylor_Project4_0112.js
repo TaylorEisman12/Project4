@@ -16,10 +16,12 @@ Array
 */ 
 
 var phoneNumber = 123-456-7890;
-var emailAddress = aaa@bbb.ccc
+var emailAddress = "aaa@bbb.ccc";
 var stringSentance = "There is no spoon";
 var url = "https://github.com";
-var stringSeperator = "a,b,c";
+var listString = "a,b,c";
+var stringSeperator1 = ",";
+var stringSeperator2 = "/";
 
 var num1 = 2.1;
 var numPercent = 45;
@@ -59,6 +61,10 @@ var titleCase = function(stringSentence){
                 return splitString.join(" ");           
 };
 
+var changeSeperator = function(listString){
+        var splitString = listString.split(stringSeperator1);
+            return splitString.join(stringSeperator2);
+};
 
 var formatNumber = function(num1){
         num1.toFixed(2);
