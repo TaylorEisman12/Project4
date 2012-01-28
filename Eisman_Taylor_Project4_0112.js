@@ -46,3 +46,15 @@ var formatNumber = function(var num = 2.1){
         num.toFixed(2);
         console.log(num);
 };
+
+var fuzzyMatch = function(){
+
+};
+
+var hourSpand = function(){
+
+};
+
+var stringToNum = function(){
+
+};
