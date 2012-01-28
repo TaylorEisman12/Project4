@@ -54,7 +54,8 @@ var checkURL = function(url) {
 var titleCase = function(stringSentence){
         var splitString = stringSentence.split(" ");
             for(var i=0; i<splitString.length; i++) {
-                
+                splitString[i] = splitString[i][0].toUpperCase
+            }    
 };
 
 
