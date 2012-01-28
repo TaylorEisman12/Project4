@@ -18,8 +18,8 @@ Array
 var phoneNumber = 123-456-7890;
 var emailAddress = aaa@bbb.ccc
 var stringSentance = "There is no spoon";
-var stringSeperator = "abc";
 var url = "https://github.com";
+var stringSeperator = "a,b,c";
 
 var num1 = 2.1;
 var numPercent = 45;
