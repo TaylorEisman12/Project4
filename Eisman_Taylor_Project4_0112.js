@@ -26,7 +26,23 @@ var phoneNumber = function(){
                         console.log("Different Text");
 };
 
-var formatNumber = function(num = 2.1){
+var emailAddress = function(){
+        
+};
+
+var url = function(){
+
+};
+
+var titleCase = function(){
+
+};
+
+var stringReturn = function(){
+
+};
+
+var formatNumber = function(var num = 2.1){
         num.toFixed(2);
         console.log(num);
 };
