@@ -1,7 +1,6 @@
 alert("JavaScript works!");
 
-String  
-
+String
     Does a string follow a 123-456-7890 pattern like a phone number?
     Does a string follow an aaa@bbb.ccc pattern like an email address?
     Is the string a URL? (Does it start with http: or https:?)
@@ -19,20 +18,33 @@ Array
     Given an array of objects and the name of a key, return the array sorted by the value of that key in
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
 
-var phoneNumber = function(){
-        if(^(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$")
-            console.log("Text");
-                }else{
-                        console.log("Different Text");
-};
+var phoneNumber = 123-456-7890;
+var emailAddress = aaa@bbb.ccc
+var stringSentance = "There is no spoon";
+var stringSeperator = "abc";
 
-var emailAddress = function(){
-        
-        
+var num1 = 2.1;
+var numPercent = 45;
+var date1 = 2;
+var date2 = 18;
+var num2String = 42;
+
+var array1 = [2,44,76,18,34];
+var array2 = [10,"Hello",20,"Bye"];
+
+
+var checkPhoneNum = function(phoneNumber){  
+    var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;  
+        return phoneNumberPattern.test(phoneNumber);  
+}; 
+
+var validateEmail = function(emailAddress){  
+   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
+   return emailPattern.test(emailAddress);  
 };
 
 var url = function(){
-
+    
 };
 
 var titleCase = function(){
@@ -43,9 +55,9 @@ var stringReturn = function(){
 
 };
 
-var formatNumber = function(var num = 2.1){
+var formatNumber = function(num1){
         num.toFixed(2);
-        console.log(num);
+        console.log(num1);
 };
 
 var fuzzyMatch = function(){
