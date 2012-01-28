@@ -26,4 +26,7 @@ var phoneNumber = function(){
                         console.log("Different Text");
 };
 
-
+var formatNumber = function(num = 2.1){
+        num.toFixed(2);
+        console.log(num);
+};
