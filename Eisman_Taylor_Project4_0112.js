@@ -4,7 +4,6 @@ Number
     Fuzzy-match a number: is the number above or below a number within a certain percent?
     Find the number of hours or days difference between two dates.
 Array
-    Find the total value of just the numbers in an array, even if some of the items are not numbers.
     Given an array of objects and the name of a key, return the array sorted by the value of that key in
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
 */ 
@@ -26,6 +25,7 @@ var stringNum = "42";
 var array1 = [2,44,76,18,34];
 var greaterThan = 10;
 var array2 = [10,"Hello",20,"Bye"];
+var sum = 0;
 
 
 var checkPhoneNum = function (p){  
@@ -84,10 +84,7 @@ var string2Number = function (x){
     
 };
 
-
-
-
-// Do not fully understand this one, had help online.
+// Do not fully understand this one, researched online.
     Array.prototype.minGreaterThan=function(a){var t=this,n=Number.POSITIVE_INFINITY,i;
     for (i=0;i<t.length;i++) if (a<t[i] && t[i]<n) n=t[i];
 	return n;
