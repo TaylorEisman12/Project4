@@ -50,14 +50,15 @@ var validateEmail = function(emailAddress){
 };
 
 var checkURL = function(url) {
-        if(url.substring(0,5) = "https"){
+        if(url.substring(0,5) == "https"){
             console.log("That is a URL");
         }
-             if(url.substring(0,4) = "http"){
+             else if(url.substring(0,4) == "http"){
                 console.log("That is a URL");        
                 
-             }
-                    console.log("That is not a URL");
+             } else{
+                 console.log("That is not a URL");
+             }                  
 };
 
 var titleCase = function(stringSentence){
