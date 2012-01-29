@@ -65,7 +65,7 @@ var titleCase = function(stringSentence){
             for(var i=0; i<splitString.length; i++) {
                 splitString[i] = splitString[i][0].toUpperCase + splitString[i].substr(1);
             } 
-                return splitString.join(" ");           
+                console.log(splitString.join(" "));           
 };
 
 var changeSeperator = function(listString){
@@ -82,3 +82,4 @@ var formatNumber = function(){
 //OUTPUT
 checkPhoneNum(phoneNumber);
 validateEmail(emailAddress);
+checkURL(url);
