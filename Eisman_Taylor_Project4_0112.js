@@ -13,7 +13,7 @@ Array
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
 */ 
 
-var phoneNumber = 123-456-7890;
+var phoneNumber = "123-456-7890";
 var emailAddress = "aaa@bbb.ccc";
 var stringSentence = "There is no spoon";
 var url = "https://github.com";
@@ -32,7 +32,7 @@ var array2 = [10,"Hello",20,"Bye"];
 
 
 var checkPhoneNum = function(phoneNumber){  
-    var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;  
+    var phoneNumberPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
          if(phoneNumberPattern.test(phoneNumber) == true){
              console.log("Phone number is valid.");
          } else{
@@ -64,7 +64,7 @@ var checkURL = function(url) {
 var titleCase = function(stringSentence){
         var splitString = stringSentence.split(" ");
             for(var i=0; i<splitString.length; i++) {
-                splitString[i] = splitString[i][0].toUpperCase + splitString[i].substr(1);
+                splitString[i] = splitString[i][0].toUpperCase() + splitString[i].substr(1);
             } 
                 console.log(splitString.join(" "));           
 };
