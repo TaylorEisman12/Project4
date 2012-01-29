@@ -105,5 +105,7 @@ checkURL(urlPage);
 titleCase(stringSentence);
 changeSeperator(listString);
 formatNumber(num1);
-string2Number();
+string2Number(stringNum);
+
+console.log("The smallest number in my array that is larger than 10.");
 console.log(array1.minGreaterThan(greaterThan));
