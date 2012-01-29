@@ -68,7 +68,7 @@ var titleCase = function (sentence){
 
 var changeSeperator = function (listString){
         var splitString = listString.split(stringSeperator1);
-            console.log(splitString.join(stringSeperator2));
+            console.log("Instead of a,b,c I like " + splitString.join(stringSeperator2));
 };
 
 var formatNumber = function (number){
@@ -106,13 +106,23 @@ console.log(sum);
 
 //OUTPUT
 checkPhoneNum(phoneNumber);
+
 validateEmail(emailAddress);
+
 checkURL(urlPage);
+
 titleCase(stringSentence);
+
 changeSeperator(listString);
+
+console.log("Here is your change.");
 formatNumber(num1);
+
+console.log("Your string is now a number.");
 string2Number(stringNum);
 
 console.log("The smallest number in my array that is larger than 10.");
 console.log(array1.minGreaterThan(greaterThan));
+
+console.log("The sum of the array is.");
 addArray(array2);
