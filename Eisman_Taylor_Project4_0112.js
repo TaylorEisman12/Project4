@@ -4,7 +4,6 @@ Number
     Fuzzy-match a number: is the number above or below a number within a certain percent?
     Find the number of hours or days difference between two dates.
 Array
-    Find the smallest value in an array that is greater than a given number
     Find the total value of just the numbers in an array, even if some of the items are not numbers.
     Given an array of objects and the name of a key, return the array sorted by the value of that key in
     each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
@@ -94,6 +93,16 @@ var string2Number = function (x){
 	return n;
     }
 
+// Not sure if this is the best way since you do not always now the array values.
+var addArray = function (array){
+   n = (array.sort().slice(0,2));
+    
+for (i = 0; i < n.length; i += 1) {
+    sum += n[i];
+  
+}
+console.log(sum);
+};
 
 
 
@@ -109,3 +118,4 @@ string2Number(stringNum);
 
 console.log("The smallest number in my array that is larger than 10.");
 console.log(array1.minGreaterThan(greaterThan));
+addArray(array2);
