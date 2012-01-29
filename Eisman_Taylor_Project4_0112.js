@@ -13,7 +13,7 @@ Array
 var phoneNumber = "123-456-7890";
 var emailAddress = "aaa@bbb.ccc";
 var stringSentence = "There is no spoon";
-var url = "https://github.com";
+var urlPage = "https://github.com";
 var listString = "a,b,c";
 var stringSeperator1 = ",";
 var stringSeperator2 = "/";
@@ -28,25 +28,25 @@ var array1 = [2,44,76,18,34];
 var array2 = [10,"Hello",20,"Bye"];
 
 
-var checkPhoneNum = function(phoneNumber){  
+var checkPhoneNum = function (p){  
     var phoneNumberPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
-         if(phoneNumberPattern.test(phoneNumber) == true){
+         if(phoneNumberPattern.test(p) == true){
              console.log("Phone number is valid.");
          } else{
              console.log("Not a valid phone number.");
          }
 }; 
 
-var validateEmail = function(emailAddress){  
+var validateEmail = function (email){  
    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
-        if(emailPattern.test(emailAddress) == true){
+        if(emailPattern.test(email) == true){
             console.log("Your email address is valid.");
         }  else{
                 console.log("Your email address is not valid.");
         }
 };
 
-var checkURL = function(url) {
+var checkURL = function (url) {
         if(url.substring(0,5) == "https"){
             console.log("That is a URL");
         }
@@ -58,37 +58,36 @@ var checkURL = function(url) {
              }                  
 };
 
-var titleCase = function(stringSentence){
-        var splitString = stringSentence.split(" ");
+var titleCase = function (sentence){
+        var splitString = sentence.split(" ");
             for(var i=0; i<splitString.length; i++) {
                 splitString[i] = splitString[i][0].toUpperCase() + splitString[i].substr(1);
             } 
                 console.log(splitString.join(" "));           
 };
 
-var changeSeperator = function(listString){
+var changeSeperator = function (listString){
         var splitString = listString.split(stringSeperator1);
             console.log(splitString.join(stringSeperator2));
 };
 
-var formatNumber = function(){
-        var newNum = num1.toFixed(2);
+var formatNumber = function (number){
+        var newNum = number.toFixed(2);
         console.log(newNum);
 };
 
 
 
-var string2Number = function(){
-        var num = Number(string2Num);
+var string2Number = function (x){
+        var num = Number(x);
             console.log(num);
     
 };
 //OUTPUT
 checkPhoneNum(phoneNumber);
 validateEmail(emailAddress);
-checkURL(url);
+checkURL(urlPage);
 titleCase(stringSentence);
 changeSeperator(listString);
-formatNumber();
-
+formatNumber(num1);
 string2Number();
