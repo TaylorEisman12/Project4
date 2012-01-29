@@ -1,8 +1,6 @@
 alert("JavaScript works!");
 /*
-String
-    Given a string that is a list of things separated by a given string, as well as another string separator,
-    return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
+
 Number
     Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
     Fuzzy-match a number: is the number above or below a number within a certain percent?
@@ -35,7 +33,11 @@ var array2 = [10,"Hello",20,"Bye"];
 
 var checkPhoneNum = function(phoneNumber){  
     var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;  
-        return phoneNumberPattern.test(phoneNumber);  
+         if(phoneNumberPattern.test(phoneNumber) == true){
+             console.log("Phone number is valid.");
+         }else{
+             console.log("Not a valid phone number.");
+         }
 }; 
 
 var validateEmail = function(emailAddress){  
@@ -66,8 +68,11 @@ var changeSeperator = function(listString){
             return splitString.join(stringSeperator2);
 };
 
-var formatNumber = function(num1){
+var formatNumber = function(){
         num1.toFixed(2);
         console.log(num1);
 };
 
+
+//OUTPUT
+checkPhoneNum(phoneNumber);
