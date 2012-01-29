@@ -83,6 +83,23 @@ var string2Number = function (x){
             console.log(num);
     
 };
+
+
+
+
+
+var findSmallNum = function (a, b){
+    array1.sort(function(a,b){return a - b})
+        for ( var i=0, i < array1.length; ++i ){
+            if (array[i] > 10 ){
+                console.log(array[i]);
+            };
+    }
+};
+
+findSmallNum(array1);
+
+
 //OUTPUT
 checkPhoneNum(phoneNumber);
 validateEmail(emailAddress);
