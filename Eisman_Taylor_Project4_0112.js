@@ -35,24 +35,29 @@ var checkPhoneNum = function(phoneNumber){
     var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;  
          if(phoneNumberPattern.test(phoneNumber) == true){
              console.log("Phone number is valid.");
-         }else{
+         } else{
              console.log("Not a valid phone number.");
          }
 }; 
 
 var validateEmail = function(emailAddress){  
    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;  
-   return emailPattern.test(emailAddress);  
+        if(emailPattern.test(emailAddress) == true){
+            console.log("Your email address is valid.");
+        }  else{
+                console.log("Your email address is not valid.");
+        }
 };
 
 var checkURL = function(url) {
         if(url.substring(0,5) = "https"){
-            return true;
+            console.log("That is a URL");
         }
              if(url.substring(0,4) = "http"){
-            return true;
-        }
-            return false;
+                console.log("That is a URL");        
+                
+             }
+                    console.log("That is not a URL");
 };
 
 var titleCase = function(stringSentence){
@@ -76,3 +81,4 @@ var formatNumber = function(){
 
 //OUTPUT
 checkPhoneNum(phoneNumber);
+validateEmail(emailAddress);
