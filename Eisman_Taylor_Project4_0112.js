@@ -1,11 +1,8 @@
 alert("JavaScript works!");
 /*
-
 Number
-    Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
     Fuzzy-match a number: is the number above or below a number within a certain percent?
     Find the number of hours or days difference between two dates.
-    Given a string version of a number such as "42", return the value as an actual Number, such as 42.
 Array
     Find the smallest value in an array that is greater than a given number
     Find the total value of just the numbers in an array, even if some of the items are not numbers.
@@ -25,7 +22,7 @@ var num1 = 2.1;
 var numPercent = 45;
 var date1 = 2;
 var date2 = 18;
-var num2String = 42;
+var stringNum = "42";
 
 var array1 = [2,44,76,18,34];
 var array2 = [10,"Hello",20,"Bye"];
@@ -80,6 +77,12 @@ var formatNumber = function(){
 };
 
 
+
+var string2Number = function(){
+        var num = Number(string2Num);
+            console.log(num);
+    
+};
 //OUTPUT
 checkPhoneNum(phoneNumber);
 validateEmail(emailAddress);
@@ -87,3 +90,5 @@ checkURL(url);
 titleCase(stringSentence);
 changeSeperator(listString);
 formatNumber();
+
+string2Number();
