@@ -15,7 +15,7 @@ Array
 
 var phoneNumber = 123-456-7890;
 var emailAddress = "aaa@bbb.ccc";
-var stringSentance = "There is no spoon";
+var stringSentence = "There is no spoon";
 var url = "https://github.com";
 var listString = "a,b,c";
 var stringSeperator1 = ",";
@@ -70,12 +70,12 @@ var titleCase = function(stringSentence){
 
 var changeSeperator = function(listString){
         var splitString = listString.split(stringSeperator1);
-            return splitString.join(stringSeperator2);
+            console.log(splitString.join(stringSeperator2));
 };
 
 var formatNumber = function(){
-        num1.toFixed(2);
-        console.log(num1);
+        var newNum = num1.toFixed(2);
+        console.log(newNum);
 };
 
 
@@ -83,3 +83,6 @@ var formatNumber = function(){
 checkPhoneNum(phoneNumber);
 validateEmail(emailAddress);
 checkURL(url);
+titleCase(stringSentence);
+changeSeperator(listString);
+formatNumber();
