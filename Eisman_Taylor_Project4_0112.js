@@ -25,6 +25,7 @@ var date2 = 18;
 var stringNum = "42";
 
 var array1 = [2,44,76,18,34];
+var greaterThan = 10;
 var array2 = [10,"Hello",20,"Bye"];
 
 
@@ -87,17 +88,14 @@ var string2Number = function (x){
 
 
 
-
-var findSmallNum = function (a, b){
-    array1.sort(function(a,b){return a - b})
-        for ( var i=0, i < array1.length; ++i ){
-            if (array[i] > 10 ){
-                console.log(array[i]);
-            };
+// Do not fully understand this one, had help online.
+    Array.prototype.minGreaterThan=function(a){var t=this,n=Number.POSITIVE_INFINITY,i;
+    for (i=0;i<t.length;i++) if (a<t[i] && t[i]<n) n=t[i];
+	return n;
     }
-};
 
-findSmallNum(array1);
+
+
 
 
 //OUTPUT
@@ -108,3 +106,4 @@ titleCase(stringSentence);
 changeSeperator(listString);
 formatNumber(num1);
 string2Number();
+console.log(array1.minGreaterThan(greaterThan));
