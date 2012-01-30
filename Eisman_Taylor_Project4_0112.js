@@ -101,7 +101,9 @@ for (i = 0; i < n.length; i += 1) {
 console.log(sum);
 };
 
-
+var say = function (message){
+	console.log(message);
+};
 
 
 //OUTPUT
@@ -115,14 +117,14 @@ titleCase(stringSentence);
 
 changeSeperator(listString);
 
-console.log("Here is your change.");
+say("Here is your change.");
 formatNumber(num1);
 
-console.log("Your string is now a number.");
+say("Your string is now a number.");
 string2Number(stringNum);
 
-console.log("The smallest number in my array that is larger than 10.");
-console.log(array1.minGreaterThan(greaterThan));
+say("The smallest number in my array that is larger than 10.");
+say(array1.minGreaterThan(greaterThan));
 
-console.log("The sum of the array is.");
+say("The sum of the array is.");
 addArray(array2);
