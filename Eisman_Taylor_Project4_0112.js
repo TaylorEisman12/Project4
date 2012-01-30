@@ -1,12 +1,4 @@
 alert("JavaScript works!");
-/*
-Number
-    Fuzzy-match a number: is the number above or below a number within a certain percent?
-    Find the number of hours or days difference between two dates.
-Array
-    Given an array of objects and the name of a key, return the array sorted by the value of that key in
-    each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
-*/ 
 
 var phoneNumber = "123-456-7890";
 var emailAddress = "aaa@bbb.ccc";
@@ -26,7 +18,11 @@ var array1 = [2,44,76,18,34];
 var greaterThan = 10;
 var array2 = [10,"Hello",20,"Bye"];
 var sum = 0;
-
+var array3 ={
+	c: "Adam",
+	b: "Chad",
+	a: "Frank"
+}; 
 
 var checkPhoneNum = function (p){  
     var phoneNumberPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;  
@@ -94,8 +90,8 @@ var string2Number = function (x){
 var addArray = function (array){
    n = (array.sort().slice(0,2));
     
-for (i = 0; i < n.length; i += 1) {
-    sum += n[i];
+	for (i = 0; i < n.length; i += 1) {
+    	sum += n[i];
   
 }
 console.log(sum);
@@ -105,8 +101,21 @@ var say = function (message){
 	console.log(message);
 };
 
+var matchingFuzzy = function (){
+	
+};
 
-//OUTPUT
+var findTimeSpan = function (date1, date2){
+    	var date = date2/*.getDate()*/ - date1/*.getDate()*/;
+    	console.log(date + " days have passed.");
+};
+
+var sortByKey = function (array){
+	array.sort(key)
+};
+
+// sortByKey(array3);
+
 checkPhoneNum(phoneNumber);
 
 validateEmail(emailAddress);
@@ -128,3 +137,5 @@ say(array1.minGreaterThan(greaterThan));
 
 say("The sum of the array is.");
 addArray(array2);
+
+findTimeSpan(date1, date2);
